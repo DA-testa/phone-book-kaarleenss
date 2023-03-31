@@ -40,7 +40,7 @@ def process_queries(queries):
             if cur_query.number in contacts:
                 response = contacts[cur_query.number]
                 break
-        result.append(response)
+            result.append(response)
     return result
 
 
