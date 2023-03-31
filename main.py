@@ -26,8 +26,6 @@ def process_queries(queries):
             # if we already have contact with such number,
             # we should rewrite contact's name
             if cur_query.number != 'not found':
-                contacts.update({cur_query.number: cur_query.name})
-            else:
                 contacts[cur_query.number] = cur_query.name
 
         elif cur_query.type == 'del':
