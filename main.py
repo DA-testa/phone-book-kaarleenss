@@ -31,13 +31,13 @@ def process_queries(queries):
         elif cur_query.type == 'del':
             if cur_query.number in contacts:
                 del contacts[cur_query.number]
-                break
+
         else:
             response = 'not found'
 
             if cur_query.number in contacts:
                 response = contacts[cur_query.number]
-                break
+
             result.append(response)
     return result
 
